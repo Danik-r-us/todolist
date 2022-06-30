@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wraper">
+        <header>
+            <h1>to do list</h1>
+        </header>
+        
+        <main class="list">
+            <ul id="list">
+                <!-- <li>Some Task<div class='remove'></div></li> -->
+            </ul>
+        </main>
+        
+        <form action="/list" method="POST" class="checklistInput" id="form">
+            <label for="checklistInput">add to list</label>
+            <input type="text" name="checklistInput" id="checklistInput" required>
+            <input type="button" name="addButton" value="add" id="addButton">
+        </form>
+    </div>
+    
+    <script src="public/js/index.js"></script>
+</body>
+</html>
